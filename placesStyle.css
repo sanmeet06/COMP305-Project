@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+nav {
+  background-color: #426255;
+  /* display: inline; */
+  padding: 28px;
+  border-radius: 100px;
+  margin-top: 11px;
+  height: 12px;
+            }
+            nav ul {
+              display: flex;
+              list-style: none;
+              align-items: center;
+              margin: 0;
+              padding: 0;
+              justify-content: end;
+          }
+            nav li {
+                margin-left: 20px;
+              
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+            }
+            nav a:hover {
+                color: #ccc;
+            }
+            header {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+label.logo {
+  color: white;
+  font-size: 30px;
+  line-height: 11px;
+  font-weight: bold;
+  text-align: left;
+  position: absolute;
+}
+img{
+  height : 220px; 
+  width:250px ;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  font-family: serif;
+  background-color: #f1f1f1;
+}
+h1{
+  font-family: serif;
+}
+button{
+  height: 40px;
+  font-size: 17px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
