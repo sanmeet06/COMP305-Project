@@ -1,0 +1,233 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-header {
+    width: 100%;
+    height: 100px;
+    display: block;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+.headerInDev h1{
+    color: white;
+    margin-left: 100px;
+    height: 100%;
+    /* display: table-cell; */
+    /* vertical-align: middle; */
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 200;
+    
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+body{
+    background-image: url(UF-background_image.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+
+    /* min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF; */
+  }
+
+
+
+.main-Content{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #EFEFEF; */
+}
+/* getting issue while using this need to fix it. */
+.slide-container{
+  max-width: 1500px;
+  width: 100%;
+  height: 67vh;
+  padding: 0px 0;
+  /* background-color: black; */
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 15px;
+   height: 250px; 
+   width: auto;
+
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 5px 5px;
+ 
+
+}
+/* .overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070F4;
+  border-radius: 25px 25px 0 25px;
+} */
+/* .overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+} */
+
+
+/* .overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+} */
+
+
+.card-image{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  /* background: #FFF;
+  padding: 3px; */
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
+  border-radius: 25px 25px 25px 25px;
+  /* border: 4px solid #4070F4; */
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: justify;
+   position:relative;
+   bottom:-1px;
+   vertical-align:bottom;
+
+}
+.User_button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position:relative;
+  bottom:6px;
+  position: fixed; left: 120; top: 120;
+  
+
+  
+}
+.User_button:hover{
+  background: #265DF2;
+}
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #1000f393;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+.user-footer {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    bottom: 0;
+    position: Relative;
+    background-color: #01070136;
+}
+
+.footerInDev h1{
+    color: rgb(250, 107, 107);
+    margin-left: 100px;
+    height: 50%;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    /* font-weight: 200; */
+}
+
+.footerInDev p{
+    color: white;
+    max-width: 1000px;
+    margin: 1px auto;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    /* line-height: 28px; */
+    
+}
