@@ -3,7 +3,7 @@
     <head>
         <title>My Website</title>
         <link rel="stylesheet" type="text/css" href="homepageCSS.css">
-        <script src="script.js"></script>
+        <script src="SearchFunctionality.js"></script>
     </head>
     <body>
     <div class="header">
@@ -18,10 +18,10 @@
       <br>
         <h2>TripJoy, allows you to search for attractions in any city within the world which you can then favorite attractions making vacations easy to plan. Your favorited attractions will be saved so you can come back to these locations in a later date. TripJoy was created to lower the stress levels of planning vacations.</h2>
         <div class="search-bar-container">
-            <form class="search-form">
-              <input type="text" placeholder="Enter City Name...">
-              <button type="submit">Search</button>
-            </form>
+          <div class="search-form">
+            <input type="text" id="place" placeholder="Search...">
+            <button type="submit" id="search" onclick="searchPlace()">Search</button>
+          </div>
         </div>
       <br>
       <h1>Most Popular Cities</h1>
