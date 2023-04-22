@@ -27,17 +27,7 @@
 					<h2 class="title">Loading...</h2>
 				<p class="description"> </p>
 				<img class="image" src="" alt="">
-				<!-- <img src="londonTower.jpeg" alt="Tower of London">
-					<ul>
-						<li>Monday	10:00 AM – 4:30 PM</li>
-						<li>Tuesday	9:00 AM – 4:30 PM </li>
-						<li>Wednesday 9:00 AM – 5:30 PM </li>
-						<li>Thursday 9:00 AM – 5:30 PM </li>
-						<li>Friday	9:00 AM – 5:30 PM</li>
-						<li>Saturday 9:00 AM – 5:30 PM</li>
-						<li>Sunday	9:00 AM – 5:30 PM</li>
-					</ul> -->
-					<p class="location"> </p>
+					<div id="location1"> </div>
 					<button type="favorite" value="favorite">♡</button>
 
 				</div>
@@ -47,17 +37,8 @@
 			   <h3 class="title">Loading...</h3>
 				<p class="description"></p>
 				<img class="image" src="" alt="">
-				<!-- <img src="buckinghamPalace.jpeg" alt="Buckingham Palace"> -->
-					<!-- <ul>
-						<li>Monday : 10 am - 4 pm </li>
-						<li>Tuesday : 10 am - 4 pm </li>
-						<li>Wednesday : 10 am - 4 pm </li>
-						<li>Thursday : 10 am - 4 pm </li>
-						<li>Friday : 10 am - 4 pm </li>
-						<li>Saturday : 10 am - 4 pm </li>
-						<li>Sunday  : 10 am - 4 pm </li>
-					</ul> -->
-					<p class="location"></p>
+				
+					<div id="location2"></div>
 					<button type="favorite" value="favorite">♡</button>
 
 				</div>
@@ -67,17 +48,7 @@
 					<h3 class="title">Loading...</h3>
 					<p class="description"></p>
 					<img class="image" src="" alt="">
-					<!-- <img src="britishMuseum.jpeg" alt="British Muesum"> -->
-					<!-- <ul>
-						<li>Monday : 10 am - 5 pm </li>
-						<li>Tuesday : 10 am - 5 pm </li>
-						<li>Wednesday : 10 am - 5 pm </li>
-						<li>Thursday : 10 am - 5 pm </li>
-						<li>Friday : 10 am - 8:30 pm </li>
-						<li>Saturday : 10 am - 5 pm </li>
-						<li>Sunday  : 10 am - 5 pm </li>
-					</ul> -->
-					<p class="location"></p>
+					<div id="location3"></div>
 					<button type="favorite" value="favorite">♡</button>
 
 				</div>
@@ -87,16 +58,7 @@
 				<h3 class="title">Loading...</h3>
 				<p class="description"></p>
 				<img class="image" src="" alt="">
-					<!-- <ul>
-						<li>Monday : 10 am - 6 pm </li>
-						<li>Tuesday : 10 am - 6 pm </li>
-						<li>Wednesday : 10 am - 6 pm </li>
-						<li>Thursday : 10 am - 6 pm </li>
-						<li>Friday : 10 am - 9 pm </li>
-						<li>Saturday : 10 am - 6 pm </li>
-						<li>Sunday  : 10 am - 6 pm </li>
-					</ul> -->
-					<p class="location"></p>
+					<div id="location4"></div>
 					<button type="favorite" value="favorite">♡</button>
 				</div>
 			</div>
@@ -137,7 +99,18 @@
 				const description = card.querySelector('.description');
 			description.textContent = place.description;
 				const location = card.querySelector('.location');
-			   location.textContent = place.address;
+				const mapLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.address.toString())}`;
+				const linkElement = document.createElement("a");
+                linkElement.href = mapLink;
+                linkElement.target = "_blank";
+                linkElement.innerText = place.address;
+                linkElement.onclick = () => {
+                   window.open(mapLink, "_blank");
+                  return false;
+      };
+      
+      document.getElementById(`location${index + 1}`).appendChild(linkElement);
+			  // location.textContent = place.address;
 			});
 		}
 		</script>

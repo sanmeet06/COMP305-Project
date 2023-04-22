@@ -1,5 +1,21 @@
 {
-  "dependencies": {
-    "axios": "^1.3.4"
-  }
+  "name": "305-travel-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "SearchFunctionality.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanmeet06/COMP305-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanmeet06/COMP305-Project/issues"
+  },
+  "homepage": "https://github.com/sanmeet06/COMP305-Project#readme"
 }

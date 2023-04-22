@@ -24,29 +24,4 @@ const options = {
 			
 }
 
-function showData(){
-		const data = JSON.parse(localStorage.getItem('apiData'));
-		data.forEach((place, index) => {
-			const card = document.getElementById(`card${index + 1}`);
-		   card.style.visibility ='visible';
-			// update the title
-			const title = card.querySelector('.title');
-			title.textContent = place.name;
-		  
-			// update the description
-			const description = card.querySelector('.description');
-			description.textContent = place.description;
-		  
-			// update the image
-			// const image = card.querySelector('.image');
-			// image.src = response.image;
-			// image.alt = response.title;
-		  
-			// update the opening hours
-		  
-			// update the location
-			const location = card.querySelector('.location');
-			location.textContent = place.data.address;
-		  });	
 
-}

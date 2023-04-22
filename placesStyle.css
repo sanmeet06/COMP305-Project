@@ -63,6 +63,7 @@ div.column:hover {
   border: 1px solid #777;
 }
 
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
   text-align: center;
@@ -71,6 +72,7 @@ div.column:hover {
   padding-bottom: 10px;
   padding-top: 10px;
   visibility: hidden;
+  
 }
 h1{
   font-family: serif;
